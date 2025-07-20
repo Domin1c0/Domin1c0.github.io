@@ -21,7 +21,7 @@ title: "Welcome to Domin1c0's Blog"
 
 ## 快速导航
 
-- [笔记分类](https://domin1c.github.io/tags/)
+- [笔记分类](/tags/)
 - [关于我](about.md)
 - [GitHub](https://github.com/domin1c0)
 - [友情链接](friends.md)
