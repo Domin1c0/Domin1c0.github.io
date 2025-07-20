@@ -7,7 +7,7 @@ title: "Welcome to Domin1c0's Blog"
 
 这里是我的博客主页，将会分享学习过程中撰写的笔记
 
-![博客logo]{/assets/images/logo.png}
+![博客logo](/assets/images/logo.png)
 
 ---
 
