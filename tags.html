@@ -1,0 +1,30 @@
+---
+layout: default
+title: 📚 笔记分类
+permalink: /tags/
+---
+
+<h1>📚 笔记分类</h1>
+<p>以下是根据文章标签自动分类生成的索引页，点击可跳转查看相关文章：</p>
+
+<ul>
+  {% for tag in site.tags %}
+    <li>
+      <a href="#{{ tag[0] }}">#{{ tag[0] }}</a> ({{ tag[1].size }} 篇文章)
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+{% for tag in site.tags %}
+  <h2 id="{{ tag[0] }}">#{{ tag[0] }}</h2>
+  <ul>
+    {% for post in tag[1] %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span style="color:gray">（{{ post.date | date: "%Y-%m-%d" }}）</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
