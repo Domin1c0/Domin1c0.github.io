@@ -12,6 +12,8 @@ title: 关于我
 - 🛠️ C/C++ 项目学习与开发
 - 📚 学习笔记整理与分享
 
-欢迎交流，访问我的 [GitHub](https://github.com/domin1c0)
+欢迎交流：
+- 🐙 GitHub：[domin1c](https://github.com/domin1c)
+- 📧 邮箱：[domin1c@example.com](mailto:domin1c@example.com)
 
 ---
