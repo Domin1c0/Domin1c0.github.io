@@ -1,0 +1,9 @@
+title: "Domin1c's Blog"
+description: "A technical blog sharing my journey in programming, development, and open source."
+baseurl: "" # 留空
+url: "https://Domin1c.github.io"
+
+theme: jekyll-theme-hacker
+
+# 可选：启用分页、markdown样式优化
+markdown: kramdown
