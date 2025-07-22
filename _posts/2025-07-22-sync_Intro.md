@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "sync_Intro"
-tags: [线程 线程同步]  # 自动添加标签
+tags: [进程, 线程同步]  # 自动添加标签
 ---
 
 # 线程同步

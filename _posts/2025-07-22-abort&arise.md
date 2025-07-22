@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "abort&arise"
-tags: [进程 信号]  # 自动添加标签
+tags: [进程, 信号通信]  # 自动添加标签
 ---
 
 # abort & raise 函数

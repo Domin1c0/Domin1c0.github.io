@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "pthread-cancel"
-tags: [线程 线程相关函数]  # 自动添加标签
+tags: [进程, 线程相关函数]  # 自动添加标签
 ---
 
 # 取消线程

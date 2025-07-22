@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "process_cmd"
-tags: [进程 进程函数]  # 自动添加标签
+tags: [进程, 进程相关函数]  # 自动添加标签
 ---
 
 # 进程管理常用命令
