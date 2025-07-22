@@ -2,23 +2,3 @@
 ---
 
 @import 'jekyll-theme-hacker';
-
-// 自定义样式
-body {
-  background-image: url('/assets/images/background2.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.wrapper, 
-.content, 
-.post-content {
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
