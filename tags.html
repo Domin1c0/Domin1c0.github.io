@@ -7,24 +7,45 @@ permalink: /tags/
 <h1>📚 笔记分类</h1>
 <p>以下是根据文章标签自动分类生成的索引页，点击可跳转查看相关文章：</p>
 
+{% assign tag_groups = 
+  "进程:基础指令,进程相关函数,信号通信,线程同步,线程相关函数|Linux:基础命令,vim" | split: "|" 
+%}
+
 <ul>
-  {% for tag in site.tags %}
+  {% for group in tag_groups %}
+    {% assign parts = group | split: ":" %}
+    {% assign parent = parts[0] %}
     <li>
-      <a href="#{{ tag[0] }}">#{{ tag[0] }}</a> ({{ tag[1].size }} 篇文章)
+      <a href="#{{ parent }}">#{{ parent }}</a>
     </li>
   {% endfor %}
 </ul>
 
 <hr>
 
-{% for tag in site.tags %}
-  <h2 id="{{ tag[0] }}">#{{ tag[0] }}</h2>
-  <ul>
-    {% for post in tag[1] %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span style="color:gray">（{{ post.date | date: "%Y-%m-%d" }}）</span>
-      </li>
-    {% endfor %}
-  </ul>
+{% for group in tag_groups %}
+  {% assign parts = group | split: ":" %}
+  {% assign parent = parts[0] %}
+  {% assign children = parts[1] | split: "," %}
+
+  <h2 id="{{ parent }}">#{{ parent }}</h2>
+  
+  {% for child in children %}
+    <h3 id="{{ child }}">#{{ child }}</h3>
+    <ul>
+      {% assign posts = site.tags[child] %}
+      {% if posts %}
+        {% for post in posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span style="color:gray">（{{ post.date | date: "%Y-%m-%d" }}）</span>
+          </li>
+        {% endfor %}
+      {% else %}
+        <li><em>暂无文章</em></li>
+      {% endif %}
+    </ul>
+  {% endfor %}
+
+  <hr>
 {% endfor %}
