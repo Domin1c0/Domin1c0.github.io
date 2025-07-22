@@ -3,7 +3,6 @@ description: "A technical blog sharing my journey in programming, development, a
 baseurl: "" # 留空
 url: "https://Domin1c.github.io"
 
-theme: jekyll-theme-hacker
 
 # 可选：启用分页、markdown样式优化
 markdown: kramdown

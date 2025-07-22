@@ -1,0 +1,12 @@
+---
+---
+
+@import 'jekyll-theme-hacker';
+
+// 自定义样式
+body {
+  background-image: url('/assets/images/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
