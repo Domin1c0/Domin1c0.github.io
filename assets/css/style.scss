@@ -12,8 +12,17 @@ body {
   background-repeat: no-repeat;
 }
 
-.wrapper {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 1.5rem;
-  border-radius: 8px;
+.wrapper, 
+.content, 
+.post-content {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+p, h1, h2, h3, a {
+  color: #222;
 }
