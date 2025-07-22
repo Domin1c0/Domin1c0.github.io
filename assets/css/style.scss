@@ -5,8 +5,15 @@
 
 // 自定义样式
 body {
-  background-image: url('/assets/images/background.png');
+  background-image: url('/assets/images/background2.png');
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
 }
